@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CSharpExample.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Lista de Personas"
+                Style="{StaticResource Headline}" />
+
+            <!-- Editor para mostrar la lista -->
+            <Editor
+                x:Name="PersonasEditor"
+                IsReadOnly="True"
+                HeightRequest="200"
+                Text="Aquí se mostrarán las personas..." />
+
+            <!-- Inputs y botones -->
+            <Entry x:Name="NombreInput" Placeholder="Nombre" />
+            <Entry x:Name="ApellidoInput" Placeholder="Apellido" />
+            <DatePicker x:Name="FechaNacimientoInput" />
+
+            <Button
+                Text="Agregar Persona"
+                Clicked="OnAgregarPersonaClicked" />
+
+            <!-- Botones para cargar y guardar -->
+            <Button
+                Text="Cargar Personas"
+                Clicked="OnCargarPersonasClicked" />
+
+            <Button
+                Text="Guardar Personas"
+                Clicked="OnGuardarPersonasClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,32 @@
+# Archivos de compilación
+bin/
+obj/
+
+# Archivos de configuración del entorno de desarrollo
+.vs/
+.idea/
+.vscode/
+
+# Archivos generados por .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Archivos de usuario y configuraciones personales
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Archivos temporales del sistema operativo
+Thumbs.db
+ehthumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+
+# Archivos de dependencias
+*.nuget/
